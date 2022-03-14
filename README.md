@@ -2,7 +2,7 @@
 
 Menginstal dependensi yang diperlukan untuk menjalankan Puppeteer di heroku. Pastikan untuk menyertakan `{ args: ['--no-sandbox'] }` Panggil Ke Dalam `puppeteer.launch`. 
 
-Puppeteer default untuk `headless: true` didalam `puppeteer.launch` dan ini tidak boleh diubah. Heroku tidak memiliki GUI untuk menunjukkan chrome saat dijalankan `headless: false` dan Heroku akan melempar Errorr.
+Puppeteer default untuk `headless: true` didalam `puppeteer.launch` dan ini tidak boleh diubah. Heroku tidak memiliki GUI untuk menunjukkan chrome saat dijalankan `headless: false` dan Heroku akan menampilkan Error.
 
 Jika Anda ingin menggunakan Puppeteer dengan firefox alih-alih chrome, gunakan buildpack ini sebagai gantinya:
 https://github.com/jontewks/heroku-buildpack-puppeteer-firefox
