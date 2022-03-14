@@ -11,13 +11,13 @@ If you want to use puppeteer with firefox instead of chrome, use this buildpack 
 To use the latest stable version run:
 
 ```sh-session
-$ heroku buildpacks:add jontewks/puppeteer
+$ heroku buildpacks:add ismailsamudra/puppeteer
 ```
 
 Or use the source code in this repository:
 
 ```sh-session
-$ heroku buildpacks:add https://github.com/jontewks/puppeteer-heroku-buildpack.git
+$ heroku buildpacks:add https://github.com/ismailsamudra/puppeteer-heroku-buildpack.git
 ```
 
 ### Additional language support
