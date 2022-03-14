@@ -1,30 +1,33 @@
 # puppeteer-heroku-buildpack
 
-Installs dependencies needed in order to run puppeteer on heroku. Be sure to include `{ args: ['--no-sandbox'] }` in your call to `puppeteer.launch`. 
+Menginstal dependensi yang diperlukan untuk menjalankan Puppeteer di heroku. Pastikan untuk menyertakan `{ args: ['--no-sandbox'] }` Panggil Ke Dalam `puppeteer.launch`. 
 
-Puppeteer defaults to `headless: true` in `puppeteer.launch` and this shouldn't be changed. Heroku doesn't have a GUI to show you chrome when running `headless: false` and Heroku will throw an error.
+Puppeteer default untuk `headless: true` didalam `puppeteer.launch` dan ini tidak boleh diubah. Heroku tidak memiliki GUI untuk menunjukkan chrome saat dijalankan `headless: false` dan Heroku akan melempar Errorr.
 
-If you want to use puppeteer with firefox instead of chrome, use this buildpack instead: https://github.com/jontewks/heroku-buildpack-puppeteer-firefox
+Jika Anda ingin menggunakan Puppeteer dengan firefox alih-alih chrome, gunakan buildpack ini sebagai gantinya:
+https://github.com/jontewks/heroku-buildpack-puppeteer-firefox
 
 ## Usage
 
-To use the latest stable version run:
+Untuk menggunakan versi stabil terbaru, jalankan:
 
 ```sh-session
 $ heroku buildpacks:add ismailsamudra/puppeteer
 ```
 
-Or use the source code in this repository:
+Atau gunakan kode sumber di repositori ini:
 
 ```sh-session
 $ heroku buildpacks:add https://github.com/ismailsamudra/puppeteer-heroku-buildpack.git
 ```
 
 ### Additional language support
-If you need support for Japanese, Chinese, or Korean fonts, a fork of this buildpack has been made to include those as well: https://github.com/CoffeeAndCode/puppeteer-heroku-buildpack
+Jika Anda memerlukan dukungan untuk font Jepang, Cina, atau Korea, fork buildpack ini telah dibuat untuk menyertakannya juga:
+https://github.com/CoffeeAndCode/puppeteer-heroku-buildpack
 
 ## Issues
 
-A common issue that people run into often is a cache issue with heroku. Often when you start seeing errors that chrome won't start and some libraries are missing, you can resolve it by clearing your heroku cache. Instructions for that can be found here: https://help.heroku.com/18PI5RSY/how-do-i-clear-the-build-cache
+Masalah umum yang sering dialami orang adalah masalah cache dengan heroku. Seringkali ketika Anda mulai melihat kesalahan bahwa chrome tidak dapat dimulai dan beberapa perpustakaan hilang, Anda dapat menyelesaikannya dengan mengosongkan cache heroku Anda. Petunjuk untuk itu dapat ditemukan di sini:
+https://help.heroku.com/18PI5RSY/how-do-i-clear-the-build-cache
 
-If you are still running into any issues with this buildpack after doing the above, please open an issue on this repo and/or submit a PR that resolves it. Different versions of chrome have different dependencies and so some issues can creep in without me knowing. Thanks!
+Jika Anda masih mengalami masalah dengan buildpack ini setelah melakukan hal di atas, silakan buka masalah pada repo ini dan/atau kirimkan PR yang menyelesaikannya. Versi chrome yang berbeda memiliki dependensi yang berbeda sehingga beberapa masalah dapat muncul tanpa sepengetahuan saya. Terima kasih!
