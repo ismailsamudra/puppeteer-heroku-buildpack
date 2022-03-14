@@ -7,7 +7,7 @@ Puppeteer default untuk `headless: true` didalam `puppeteer.launch` dan ini tida
 Jika Anda ingin menggunakan Puppeteer dengan firefox , gunakan buildpack ini sebagai gantinya:
 https://github.com/jontewks/heroku-buildpack-puppeteer-firefox
 
-## Usage
+## Penggunaan
 
 Untuk menggunakan versi stabil terbaru, jalankan:
 
@@ -21,11 +21,11 @@ Atau gunakan kode sumber di repositori ini:
 $ heroku buildpacks:add https://github.com/ismailsamudra/puppeteer-heroku-buildpack.git
 ```
 
-### Additional language support
+### Dukungan bahasa tambahan
 Jika Anda memerlukan dukungan untuk font Jepang, Cina, atau Korea, fork buildpack ini telah dibuat untuk menyertakannya juga:
 https://github.com/CoffeeAndCode/puppeteer-heroku-buildpack
 
-## Issues
+## Masalah
 
 Masalah umum yang sering dialami orang adalah masalah cache dengan heroku. Seringkali ketika Anda mulai melihat kesalahan bahwa chrome tidak dapat dimulai dan beberapa perpustakaan hilang, Anda dapat menyelesaikannya dengan mengosongkan cache heroku Anda. Petunjuk untuk itu dapat ditemukan di sini:
 https://help.heroku.com/18PI5RSY/how-do-i-clear-the-build-cache
